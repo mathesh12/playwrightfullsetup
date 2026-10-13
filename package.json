@@ -1,0 +1,24 @@
+{
+  "name": "new",
+  "version": "1.0.0",
+  "description": "Beginner-friendly Playwright TypeScript framework for SauceDemo",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:chromium": "playwright test --project=chromium",
+    "test:workers": "playwright test --project=worker-demo",
+    "test:roles": "playwright test --project=role-tests",
+    "test:report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["playwright", "typescript", "saucedemo"],
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.1",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}
